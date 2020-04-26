@@ -30,7 +30,7 @@ class Main extends Component {
     return (
       <div>
         <Title title={'Photowall'} />
-        <PhotoWall />
+        <PhotoWall posts={posts} />
       </div>
     );
   }
