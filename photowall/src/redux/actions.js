@@ -6,10 +6,18 @@ export function removePost(index) {
   };
 }
 
-//adding post
+//add post
 export function addPost(post) {
   return {
     type: 'ADD_POST',
     post
+  };
+}
+
+//add comment
+export function addComment(comment) {
+  return {
+    type: 'ADD_COMMENT',
+    comment
   };
 }
