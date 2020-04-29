@@ -1,7 +1,7 @@
 import Main from './Main';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { removePost } from '../redux/actions';
+import * as actions from '../redux/actions';
 
 function mapStateToProps(state) {
   return {
@@ -10,7 +10,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ removePost }, dispatch);
+  return bindActionCreators(actions, dispatch);
 }
 
 const App = connect(mapStateToProps, mapDispatchToProps)(Main);
